@@ -14,16 +14,16 @@ html(lang="lt")
 			//- Main
 			main
 				
-				.grid.grid--no-gutter
+				.grid.grid.grid--full 
 					.row.row--no-gutter 
 						.col.md-16-16.col.sm-16-16.col.xs-16-16
-							row
+							.row
 							
-								.col.md-4-16.col.sm-8-16.col.xs-16-16
-									.item.vc.flex
-										.logo
-											.img-box
-												img(src='assets/images/logos/Vairo-centras-logo.jpg', alt='Autohidraulika vairas')
+								.col.md-4-16.col.sm-8-16.col.xs-16-16.item
+									
+									.logo
+										.img-box
+											img(src='assets/images/logos/Vairo-centras-logo.jpg', alt='Autohidraulika vairas')
 									.img-box
 										img(src='assets/images/products/img1.jpg', alt='Autohidraulika vairas')
 									.info
@@ -31,11 +31,11 @@ html(lang="lt")
 										p Specializuotas vairo sistemų servisas
 
 							
-								.col.md-4-16.col.sm-8-16.col.xs-16-16
-									.item.atg
-										.logo
-											.img-box
-												img(src='assets/images/logos/atg.jpg', alt='atg logo')
+								.col.md-4-16.col.sm-8-16.col.xs-16-16.item
+	
+									.logo
+										.img-box
+											img(src='assets/images/logos/atg.jpg', alt='atg logo')
 
 									.img-box
 										img(src='assets/images/products/img2.jpg', alt='atg components')
@@ -45,27 +45,27 @@ html(lang="lt")
 					
 
 
-								.col.md-4-16.col.sm-8-16.col.xs-16-16
-									.item.motorherz
-										.logo
-											.img-box
-												img(src='assets/images/logos/motorherz.jpg', alt='logo motorherz')
+								.col.md-4-16.col.sm-8-16.col.xs-16-16.item
+									
+									.logo
 										.img-box
-											img(src='assets/images/products/img3.jpg', alt='motorherz vairo kolonelės')
-										.info
-											h2 motorherz
-											p Specializuotas vairo sistemų servisas
+											img(src='assets/images/logos/motorherz.jpg', alt='logo motorherz')
+									.img-box
+										img(src='assets/images/products/img3.jpg', alt='motorherz vairo kolonelės')
+									.info
+										h2 motorherz
+										p Specializuotas vairo sistemų servisas
 											
-								.col.md-4-16.col.sm-8-16.col.xs-16-16
-									.item.athidraulic
-										.logo
-											.img-box
-												img(src='assets/images/logos/athidraulic.jpg', alt='athidraulic logo')
+								.col.md-4-16.col.sm-8-16.col.xs-16-16.item.last
+
+									.logo
 										.img-box
-											img(src='assets/images/products/img4.jpg', alt='eps testing vairo sistemos')
-										.info
-											h2 eps testing
-											p Specializuotas vairo sistemų servisas
+											img(src='assets/images/logos/athidraulic.jpg', alt='athidraulic logo')
+									.img-box
+										img(src='assets/images/products/img4.jpg', alt='eps testing vairo sistemos')
+									.info
+										h2 eps testing
+										p Specializuotas vairo sistemų servisas
 
 			//- Footer
 			include includes/global/global_footer

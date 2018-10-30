@@ -1,24 +1,41 @@
 main
-	.img-box
-		margin: 95px 0 130px 0
-		height: 430px
-		//margin-left: 70px
-	.logo
-		margin-top: 75px
-		align-items: center
+	.item
+		border-right: solid 1px $color-secondary
+		overflow: hidden
+		//position: relative
+		height: 100%
+	
+		
 		.img-box
+			margin: 95px 0 130px 0
+			//height: 430px
+			width: 100%
+			//position: absolute
+			//top: 0
+			//right: 0
+			//bottom: 0
+			//left: 0
+			//margin: auto
+			img
+				display: block
+				transform: translateX(25%);
+		.logo
+			margin-top: 75px
+			
+			.img-box
 
-				height: 35px
-				img
-					position: relative
-					top: 50%
-					transform: translatey(-50%)
-					max-width: 100%
-					max-height: 100%
-					margin: 0 auto
-	.info
-		padding-left: 40px
-		padding-bottom: 65px
+					height: 35px
+					img
+						position: relative
+						top: 50%
+						transform: translatey(-50%)
+						max-width: 100%
+						max-height: 100%
+						margin: 0 auto
+		.info
+
+			//position: absolute
+			bottom: 40px
 
 		
 
