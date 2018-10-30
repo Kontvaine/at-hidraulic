@@ -1,42 +1,57 @@
 main
+	height: 100vh
 	.item
 		border-right: solid 1px $color-secondary
 		overflow: hidden
-		//position: relative
-		height: 100%
-	
-		
-		.img-box
-			margin: 95px 0 130px 0
-			//height: 430px
-			width: 100%
-			//position: absolute
-			//top: 0
-			//right: 0
-			//bottom: 0
-			//left: 0
-			//margin: auto
-			img
-				display: block
-				transform: translateX(25%);
+		position: relative
 		.logo
-			margin-top: 75px
+			margin-top: 50px
 			
 			.img-box
-
+					//width: 180px
 					height: 35px
 					img
-						position: relative
-						top: 50%
-						transform: translatey(-50%)
-						max-width: 100%
 						max-height: 100%
-						margin: 0 auto
+						max-width: 100%
+						display: block;
+						margin: 0 auto;
+
+		
+	
+	
+		
+		.img-box.center
+			position: relative
+			margin: 95px 0 210px 0
+			height: 300px
+
+
+			img
+				display: block
+				position: absolute
+				max-height: 100%
+				max-width: 100%
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				margin: auto
+				transform: translateX(40%)
+
 		.info
-
-			//position: absolute
-			bottom: 40px
-
+			display: block
+			position: absolute
+			bottom: 0
+	
+	.item:hover
+		.img-box.center img
+			transform: translateX(0%)
+			transition: $transition-slow
+	//.logo:hover	
+		.img-box.center img
+			transform: translateX(0%)
+			transition: $transition-slow
+	
 		
 
 		
