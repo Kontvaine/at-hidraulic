@@ -1,17 +1,22 @@
 main
 	
 	//margin: auto 0 
-	.item
+	a.item 
+		text-decoration: none
+		display: block
+		color: $color-primary
 		border-right: solid 1px $color-secondary
 		overflow: hidden
 		position: relative
 		height: 100vh
+
 		.logo
 			margin-top: 50px
 			
 			.img-box
 					//width: 180px
 					height: 35px
+					margin: 75px 0 95px 0
 					img
 						max-height: 100%
 						max-width: 100%
@@ -21,7 +26,7 @@ main
 		
 		.img-box.center
 			position: relative
-			margin: 95px 0 210px 0
+			margin: 95px 0 130px 0
 			height: 430px
 
 
@@ -36,11 +41,16 @@ main
 				left: 0
 				margin: auto
 				transform: translateX(30%)
+			img.motorherz
 
+				max-height: 130%;
+				max-width: 130%;
+				transform: translateX(10%)
+		
 		.info
 			margin-top: 100px
 			position: absolute
-			bottom: 30px	
+			bottom: 65px	
 			left: 40px
 
 	
@@ -48,10 +58,11 @@ main
 		.img-box.center img
 			transform: translateX(0%)
 			transition: $transition-slow
-	//.logo:hover	
-		.img-box.center img
-			transform: translateX(0%)
-			transition: $transition-slow
+		.img-box.center img.motorherz
+			transform: translateX(-10%)
+
+
+
 	
 		
 

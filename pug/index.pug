@@ -10,6 +10,8 @@ html(lang="lt")
 
 			//- Header
 			include includes/global/global_header
+			//- Mixin
+			include includes/mixins
 
 			//- Main
 			main
@@ -20,7 +22,7 @@ html(lang="lt")
 							.row
 							
 								.col.md-4-16.col.sm-8-16.col.xs-16-16
-									.item
+									a.item(href="http://www.autohidraulika.lt/", target="_blank")
 									
 										.logo
 											.img-box
@@ -34,7 +36,7 @@ html(lang="lt")
 
 							
 								.col.md-4-16.col.sm-8-16.col.xs-16-16
-									.item
+									a.item(href="https://www.atg-components.com/", target="_blank")
 	
 										.logo
 											.img-box
@@ -49,19 +51,19 @@ html(lang="lt")
 
 
 								.col.md-4-16.col.sm-8-16.col.xs-16-16
-									.item
+									a.item(href="https://www.motorherz.us/", target="_blank")
 									
 										.logo
 											.img-box
 												img(src='assets/images/logos/motorherz.jpg', alt='logo motorherz')
 										.img-box.center
-											img(src='assets/images/products/img3.jpg', alt='motorherz vairo kolonelės')
+											img.motorherz(src='assets/images/products/img3.jpg', alt='motorherz vairo kolonelės')
 										.info
 											h2 motorherz
 											p Specializuotas vairo sistemų servisas
 											
 								.col.md-4-16.col.sm-8-16.col.xs-16-16
-									.item.last
+									a.item.last(href="https://www.epstesting.com/", target="_blank")
 
 										.logo
 											.img-box
