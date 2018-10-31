@@ -2,15 +2,49 @@
 //
 //@media (max-width: $grid-breakpoint-lg)
 
-//@media (max-width: $grid-breakpoint-md)
+@media (max-width: $grid-breakpoint-md)
+		main 
+			.item
+
+				.info
+
+					p 
+						width: 90%
 
 @media (max-width: $grid-breakpoint-sm)
-	.img-box.center 
-		img
-			transform: none
+	main .item 
+		height: 100vh
+		//ar palikti 100vh?
+		width: 50%
+	
+		img.center
+			transform: translateX(0%)
+			height: 320px
+		.info
+			bottom: 30px	
+			p 
+				width: 100%
+
 
 
 @media (max-width: $grid-breakpoint-xs)
-	.img-box.center 
-		img
-			transform: none
+	main .item
+		width: 100%
+		
+		img.center
+			transform: translateX(0%)
+			height: 245px
+		.info
+			position: absolute;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%)
+			text-align: center
+			width: 120%
+
+			
+				
+				
+
+
+

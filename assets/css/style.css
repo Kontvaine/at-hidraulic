@@ -398,7 +398,7 @@ h1 {
   font-size: 3em; }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.125em;
   font-weight: 600;
   margin: 0; }
 
@@ -417,8 +417,7 @@ h6 {
 p {
   margin-top: 0.5em;
   margin-bottom: 0;
-  line-height: 19px;
-  font-weight: 500; }
+  line-height: 19px; }
 
 a {
   text-decoration: none; }
@@ -2855,54 +2854,50 @@ blockquote {
 .btn {
   display: inline-block; }
 
-main a.item {
+main .item {
   text-decoration: none;
   display: block;
   color: #494949;
   border-right: solid 1px #E0E0E0;
   overflow: hidden;
   position: relative;
-  height: 100vh; }
-  main a.item .logo {
-    margin-top: 50px; }
-    main a.item .logo .img-box {
-      height: 35px;
-      margin: 75px 0 95px 0; }
-      main a.item .logo .img-box img {
-        max-height: 100%;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto; }
-  main a.item .img-box.center {
-    position: relative;
-    margin: 95px 0 130px 0;
-    height: 430px; }
-    main a.item .img-box.center img {
+  height: 100vh;
+  width: 25%;
+  float: left; }
+  main .item .logo {
+    margin: 75px 0 95px 0; }
+    main .item .logo img {
+      max-height: 35px;
+      max-width: 180px;
       display: block;
-      position: absolute;
-      max-height: 100%;
-      max-width: 100%;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      -webkit-transform: translateX(30%);
-      -ms-transform: translateX(30%);
-      transform: translateX(30%); }
-    main a.item .img-box.center img.motorherz {
-      max-height: 130%;
-      max-width: 130%;
-      -webkit-transform: translateX(10%);
-      -ms-transform: translateX(10%);
-      transform: translateX(10%); }
-  main a.item .info {
-    margin-top: 100px;
+      margin: 0 auto; }
+  main .item img.center {
+    height: 430px;
+    display: block;
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    -webkit-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    transform: translateX(30%); }
+  main .item img.motorherz {
+    height: 530px;
+    max-height: 130%;
+    max-width: 130%;
+    -webkit-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+    transform: translateX(20%); }
+  main .item .info {
     position: absolute;
     bottom: 65px;
     left: 40px; }
 
-main .item:hover .img-box.center img {
+main .item:hover img.center {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%);
@@ -2915,14 +2910,37 @@ main .item:hover .img-box.center img.motorherz {
   -ms-transform: translateX(-10%);
   transform: translateX(-10%); }
 
+@media (max-width: 1024px) {
+  main .item .info p {
+    width: 90%; } }
+
 @media (max-width: 768px) {
-  .img-box.center img {
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none; } }
+  main .item {
+    height: 100vh;
+    width: 50%; }
+    main .item img.center {
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      transform: translateX(0%);
+      height: 320px; }
+    main .item .info {
+      bottom: 30px; }
+      main .item .info p {
+        width: 100%; } }
 
 @media (max-width: 568px) {
-  .img-box.center img {
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none; } }
+  main .item {
+    width: 100%; }
+    main .item img.center {
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      transform: translateX(0%);
+      height: 245px; }
+    main .item .info {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      text-align: center;
+      width: 120%; } }

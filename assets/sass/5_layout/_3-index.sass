@@ -1,7 +1,7 @@
 main
 	
 	//margin: auto 0 
-	a.item 
+	.item 
 		text-decoration: none
 		display: block
 		color: $color-primary
@@ -9,57 +9,56 @@ main
 		overflow: hidden
 		position: relative
 		height: 100vh
+		width: 25%
+		float: left
 
 		.logo
-			margin-top: 50px
-			
-			.img-box
-					//width: 180px
-					height: 35px
-					margin: 75px 0 95px 0
-					img
-						max-height: 100%
-						max-width: 100%
-						display: block
-						margin: 0 auto
-	
-		
-		.img-box.center
-			position: relative
-			margin: 95px 0 130px 0
-			height: 430px
-
-
+			margin: 75px 0 95px 0
 			img
+				max-height: 35px
+				max-width: 180px
 				display: block
-				position: absolute
-				max-height: 100%
-				max-width: 100%
-				top: 0
-				right: 0
-				bottom: 0
-				left: 0
-				margin: auto
-				transform: translateX(30%)
-			img.motorherz
+				margin: 0 auto
 
-				max-height: 130%;
-				max-width: 130%;
-				transform: translateX(10%)
-		
+
+		img.center
+			height: 430px
+			display: block
+			position: absolute
+			max-height: 100%
+			max-width: 100%
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			margin: auto
+			transform: translateX(30%)
+
+		img.motorherz
+			height: 530px
+			max-height: 130%
+			max-width: 130%
+			transform: translateX(20%)
 		.info
-			margin-top: 100px
+			
 			position: absolute
 			bottom: 65px	
 			left: 40px
 
+				
+
+
 	
-	.item:hover
-		.img-box.center img
+
+
+
+	.item:hover 
+		img.center
 			transform: translateX(0%)
 			transition: $transition-slow
 		.img-box.center img.motorherz
 			transform: translateX(-10%)
+
 
 
 
