@@ -2863,7 +2863,10 @@ main .item {
   position: relative;
   height: 100vh;
   width: 25%;
-  float: left; }
+  float: left;
+  -webkit-transition: width 2s;
+  -o-transition: width 2s;
+  transition: width 2s; }
   main .item .logo {
     margin: 75px 0 95px 0; }
     main .item .logo img {
@@ -2885,13 +2888,6 @@ main .item {
     -webkit-transform: translateX(30%);
     -ms-transform: translateX(30%);
     transform: translateX(30%); }
-  main .item img.motorherz {
-    height: 530px;
-    max-height: 130%;
-    max-width: 130%;
-    -webkit-transform: translateX(20%);
-    -ms-transform: translateX(20%);
-    transform: translateX(20%); }
   main .item .info {
     position: absolute;
     bottom: 65px;
@@ -2901,14 +2897,30 @@ main .item:hover img.center {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%);
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
+  -webkit-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease; }
 
 main .item:hover .img-box.center img.motorherz {
   -webkit-transform: translateX(-10%);
   -ms-transform: translateX(-10%);
   transform: translateX(-10%); }
+
+main .item:first-child:hover:nth-child(2) {
+  background-color: pink; }
+
+main .item:first-child:hover {
+  background-color: blue;
+  width: 31.25%; }
+  main .item:first-child:hover:nth-child(2) {
+    background-color: red;
+    width: 25%; }
+  main .item:first-child:hover:nth-child(3) {
+    width: 21.875%;
+    background-color: green; }
+  main .item:first-child:hover:nth-child(4) {
+    width: 21.875%;
+    background-color: pink; }
 
 @media (max-width: 1024px) {
   main .item .info p {

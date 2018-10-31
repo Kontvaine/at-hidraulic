@@ -11,6 +11,7 @@ main
 		height: 100vh
 		width: 25%
 		float: left
+		transition: width 2s
 
 		.logo
 			margin: 75px 0 95px 0
@@ -34,7 +35,7 @@ main
 			margin: auto
 			transform: translateX(30%)
 
-		img.motorherz
+		//img.motorherz
 			height: 530px
 			max-height: 130%
 			max-width: 130%
@@ -44,20 +45,52 @@ main
 			position: absolute
 			bottom: 65px	
 			left: 40px
-
-				
-
-
 	
-
-
-
-	.item:hover 
+	
+	.item:hover
 		img.center
 			transform: translateX(0%)
 			transition: $transition-slow
 		.img-box.center img.motorherz
 			transform: translateX(-10%)
+	
+	.item:first-child:hover:nth-child(2)
+		background-color: pink
+	
+	
+	.item:first-child:hover
+		background-color: blue
+		width: 31.25%
+		&:nth-child(2)
+			background-color: red
+			width: 25%
+		&:nth-child(3)
+			width: 21.875%
+			background-color: green
+		&:nth-child(4)
+			width: 21.875%
+			background-color: pink
+
+	//.first:hover
+		background-color: red
+		width: 31.25%
+
+	
+	//.first:hover .second
+		background-color: green
+		width: 25%
+
+
+
+
+	//.item:hover
+		img.center
+			transform: translateX(0%)
+			transition: $transition-slow
+		.img-box.center img.motorherz
+			transform: translateX(-10%)
+	
+
 
 
 
