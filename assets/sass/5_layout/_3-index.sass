@@ -1,9 +1,11 @@
 main
-	height: 100vh
+	
+	//margin: auto 0 
 	.item
 		border-right: solid 1px $color-secondary
 		overflow: hidden
 		position: relative
+		height: 100vh
 		.logo
 			margin-top: 50px
 			
@@ -13,17 +15,14 @@ main
 					img
 						max-height: 100%
 						max-width: 100%
-						display: block;
-						margin: 0 auto;
-
-		
-	
+						display: block
+						margin: 0 auto
 	
 		
 		.img-box.center
 			position: relative
 			margin: 95px 0 210px 0
-			height: 300px
+			height: 430px
 
 
 			img
@@ -36,12 +35,14 @@ main
 				bottom: 0
 				left: 0
 				margin: auto
-				transform: translateX(40%)
+				transform: translateX(30%)
 
 		.info
-			display: block
+			margin-top: 100px
 			position: absolute
-			bottom: 0
+			bottom: 30px	
+			left: 40px
+
 	
 	.item:hover
 		.img-box.center img

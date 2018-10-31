@@ -2855,46 +2855,47 @@ blockquote {
 .btn {
   display: inline-block; }
 
-main {
+main .item {
+  border-right: solid 1px #E0E0E0;
+  overflow: hidden;
+  position: relative;
   height: 100vh; }
-  main .item {
-    border-right: solid 1px #E0E0E0;
-    overflow: hidden;
-    position: relative; }
-    main .item .logo {
-      margin-top: 50px; }
-      main .item .logo .img-box {
-        height: 35px; }
-        main .item .logo .img-box img {
-          max-height: 100%;
-          max-width: 100%;
-          display: block;
-          margin: 0 auto; }
-    main .item .img-box.center {
-      position: relative;
-      margin: 95px 0 210px 0;
-      height: 300px; }
-      main .item .img-box.center img {
-        display: block;
-        position: absolute;
+  main .item .logo {
+    margin-top: 50px; }
+    main .item .logo .img-box {
+      height: 35px; }
+      main .item .logo .img-box img {
         max-height: 100%;
         max-width: 100%;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        -webkit-transform: translateX(40%);
-        -ms-transform: translateX(40%);
-        transform: translateX(40%); }
-    main .item .info {
+        display: block;
+        margin: 0 auto; }
+  main .item .img-box.center {
+    position: relative;
+    margin: 95px 0 210px 0;
+    height: 430px; }
+    main .item .img-box.center img {
       display: block;
       position: absolute;
-      bottom: 0; }
-  main .item:hover .img-box.center img {
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%);
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease; }
+      max-height: 100%;
+      max-width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      -webkit-transform: translateX(30%);
+      -ms-transform: translateX(30%);
+      transform: translateX(30%); }
+  main .item .info {
+    margin-top: 100px;
+    position: absolute;
+    bottom: 30px;
+    left: 40px; }
+
+main .item:hover .img-box.center img {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
