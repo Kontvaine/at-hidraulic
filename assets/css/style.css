@@ -2854,28 +2854,24 @@ blockquote {
 .btn {
   display: inline-block; }
 
-main .item {
+.item {
+  position: relative;
   text-decoration: none;
   display: block;
   color: #494949;
   border-right: solid 1px #E0E0E0;
   overflow: hidden;
-  position: relative;
   height: 100vh;
   width: 25%;
-  float: left;
-  -webkit-transition: width 2s;
-  -o-transition: width 2s;
-  transition: width 2s; }
-  main .item .logo {
-    margin: 75px 0 95px 0; }
-    main .item .logo img {
+  float: left; }
+  .item .item__logo {
+    margin-top: 75px; }
+    .item .item__logo img {
       max-height: 35px;
       max-width: 180px;
       display: block;
       margin: 0 auto; }
-  main .item img.center {
-    height: 430px;
+  .item img.item__center {
     display: block;
     position: absolute;
     max-height: 100%;
@@ -2885,82 +2881,56 @@ main .item {
     bottom: 0;
     left: 0;
     margin: auto;
-    -webkit-transform: translateX(30%);
-    -ms-transform: translateX(30%);
-    transform: translateX(30%); }
-  main .item .info {
+    -webkit-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    transform: translateX(25%);
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease; }
+  .item .item__info {
     position: absolute;
     bottom: 65px;
     left: 40px; }
-
-main .item:hover img.center {
-  -webkit-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  transform: translateX(0%);
-  -webkit-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  transition: all 2s ease; }
-
-main .item:hover .img-box.center img.motorherz {
-  -webkit-transform: translateX(-10%);
-  -ms-transform: translateX(-10%);
-  transform: translateX(-10%); }
-
-main .item:first-child:hover:nth-child(2) {
-  background-color: pink; }
-
-main .item:first-child:hover {
-  background-color: blue;
-  width: 31.25%; }
-  main .item:first-child:hover:nth-child(2) {
-    background-color: red;
-    width: 25%; }
-  main .item:first-child:hover:nth-child(3) {
-    width: 21.875%;
-    background-color: green; }
-  main .item:first-child:hover:nth-child(4) {
-    width: 21.875%;
-    background-color: pink; }
+  .item:hover img.item__center {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%); }
 
 @media (max-width: 1024px) {
-  main .item .info p {
-    width: 90%; } }
+  .item img.item__center {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%); }
+  .item .item__info {
+    left: 20px;
+    bottom: 30px; } }
 
 @media (max-width: 768px) {
-  main .item {
-    height: 515px;
+  .item {
     width: 50%;
     border-bottom: solid 1px #E0E0E0; }
-    main .item .logo {
-      margin: 36px 0 30px 0; }
-    main .item img.center {
+    .item .item__logo {
+      margin: 36px 0 0 0; }
+    .item img.item__center {
       -webkit-transform: translateX(0%);
       -ms-transform: translateX(0%);
       transform: translateX(0%);
-      height: 320px; }
-    main .item .info {
-      bottom: 30px;
-      left: 20px; }
-      main .item .info p {
-        width: 100%; } }
+      width: 270px; } }
 
 @media (max-width: 568px) {
-  main .item {
-    height: 480px;
+  .item {
     width: 100%;
     border-bottom: solid 1px #E0E0E0; }
-    main .item .logo {
+    .item .item__logo {
       margin: 35px 0 30px 0; }
-    main .item img.center {
-      -webkit-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-      transform: translateX(0%);
-      height: 245px; }
-    main .item .info {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      text-align: center;
-      width: 120%; } }
+    .item img.item__center {
+      position: relative;
+      width: 245px; }
+    .item .item__info {
+      position: relative;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: center; } }

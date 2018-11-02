@@ -1,94 +1,54 @@
-main
-	
-	//margin: auto 0 
-	.item 
-		text-decoration: none
-		display: block
-		color: $color-primary
-		border-right: solid 1px $color-secondary
-		overflow: hidden
-		position: relative
-		height: 100vh
-		width: 25%
-		float: left
-		transition: width 2s
-
-		.logo
-			margin: 75px 0 95px 0
-			img
-				max-height: 35px
-				max-width: 180px
-				display: block
-				margin: 0 auto
 
 
-		img.center
-			height: 430px
+//margin: auto 0 
+.item 
+	position: relative
+	text-decoration: none
+	display: block
+	color: $color-primary
+	border-right: solid 1px $color-secondary
+	overflow: hidden
+	height: 100vh
+	width: 25%
+	float: left
+
+
+	.item__logo
+		//margin: 75px 0 95px 0
+		margin-top: 75px
+		img
+			max-height: 35px
+			max-width: 180px
 			display: block
-			position: absolute
-			max-height: 100%
-			max-width: 100%
-			top: 0
-			right: 0
-			bottom: 0
-			left: 0
-			margin: auto
-			transform: translateX(30%)
+			margin: 0 auto
 
-		//img.motorherz
-			height: 530px
-			max-height: 130%
-			max-width: 130%
-			transform: translateX(20%)
-		.info
-			
-			position: absolute
-			bottom: 65px	
-			left: 40px
-	
-	
-	.item:hover
-		img.center
+
+	img.item__center
+		//height: 430px
+		display: block
+		position: absolute
+		max-height: 100%
+		max-width: 100%
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		margin: auto
+		transform: translateX(25%)
+		transition: 1s ease
+
+	.item__info
+
+		position: absolute
+		bottom: 65px	
+		left: 40px
+
+
+	&:hover
+		img.item__center
 			transform: translateX(0%)
-			transition: $transition-slow
-		.img-box.center img.motorherz
-			transform: translateX(-10%)
-	
-	.item:first-child:hover:nth-child(2)
-		background-color: pink
-	
-	
-	.item:first-child:hover
-		background-color: blue
-		width: 31.25%
-		&:nth-child(2)
-			background-color: red
-			width: 25%
-		&:nth-child(3)
-			width: 21.875%
-			background-color: green
-		&:nth-child(4)
-			width: 21.875%
-			background-color: pink
-
-	//.first:hover
-		background-color: red
-		width: 31.25%
-
-	
-	//.first:hover .second
-		background-color: green
-		width: 25%
 
 
-
-
-	//.item:hover
-		img.center
-			transform: translateX(0%)
-			transition: $transition-slow
-		.img-box.center img.motorherz
-			transform: translateX(-10%)
 	
 
 
