@@ -1,6 +1,12 @@
 $(document).ready(function(){
-	console.log("done?")
 	
+	$(".item").hover(function() {
+    $(this).siblings().toggleClass("smaller");
+		 $(this).toggleClass("wider");
+}, 
+   
+		
+);
 
 });
 
