@@ -2881,16 +2881,15 @@ blockquote {
   .item img.item__center {
     display: block;
     position: absolute;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 430px;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    -webkit-transform: translateX(25%);
-    -ms-transform: translateX(25%);
-    transform: translateX(25%);
+    -webkit-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+    transform: translateX(20%);
     -webkit-transition: 1s ease;
     -o-transition: 1s ease;
     transition: 1s ease; }
@@ -2914,10 +2913,10 @@ blockquote {
     -ms-transform: translatey(20%);
     transform: translatey(20%); }
 
-.wider {
+.item--wider {
   width: 30%; }
 
-.smaller {
+.item--smaller {
   width: 23.333%; }
 
 @media (max-width: 1024px) {
