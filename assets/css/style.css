@@ -2903,6 +2903,14 @@ blockquote {
       -webkit-transition: 1s ease;
       -o-transition: 1s ease;
       transition: 1s ease; }
+
+.item--wider {
+  width: 30%; }
+
+.item--smaller {
+  width: 23.333%; }
+
+@media (min-width: 1280px) {
   .item:hover img.item__center {
     -webkit-transform: translateX(15%);
     -ms-transform: translateX(15%);
@@ -2911,19 +2919,11 @@ blockquote {
     opacity: 1;
     -webkit-transform: translatey(20%);
     -ms-transform: translatey(20%);
-    transform: translatey(20%); }
-
-.item--wider {
-  width: 30%; }
-
-.item--smaller {
-  width: 23.333%; }
+    transform: translatey(20%); } }
 
 @media (max-width: 1024px) {
   .item img.item__center {
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%); }
+    max-height: 305px; }
   .item .item__info {
     padding: 0 20px 0 20px;
     bottom: 30px; }
