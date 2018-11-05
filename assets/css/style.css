@@ -2910,11 +2910,27 @@ blockquote {
 .item--smaller {
   width: 23.333%; }
 
-@media (min-width: 1280px) {
+@media (max-width: 1440px) {
+  .item img.item__center {
+    max-width: 300px; }
+  .item .item__info {
+    padding: 0 10px 0 10px;
+    bottom: 40px; }
+    .item .item__info h3 {
+      font-size: 2em; } }
+
+@media (min-width: 1024px) {
   .item:hover img.item__center {
     -webkit-transform: translateX(15%);
     -ms-transform: translateX(15%);
     transform: translateX(15%); }
+  .item:hover .item__info h3 {
+    -webkit-transform: translatey(20%);
+    -ms-transform: translatey(20%);
+    transform: translatey(20%);
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease; }
   .item:hover .item__info p {
     opacity: 1;
     -webkit-transform: translatey(20%);
@@ -2922,38 +2938,38 @@ blockquote {
     transform: translatey(20%); } }
 
 @media (max-width: 1024px) {
-  .item img.item__center {
-    max-height: 305px;
-    -webkit-transform: translateX(15%);
-    -ms-transform: translateX(15%);
-    transform: translateX(15%); }
-  .item .item__info {
-    padding: 0 20px 0 20px;
-    bottom: 30px; }
-    .item .item__info p {
-      opacity: 1;
-      -webkit-transform: translatey(0%);
-      -ms-transform: translatey(0%);
-      transform: translatey(0%); }
-    .item .item__info h3 {
-      font-size: 2.125em; } }
-
-@media (max-width: 768px) {
   .item {
     height: 50vh;
     width: 50%;
     border-bottom: solid 1px #E0E0E0; }
-    .item .item__logo {
-      margin: 36px 0 0 0; }
     .item img.item__center {
       -webkit-transform: translateX(0%);
       -ms-transform: translateX(0%);
       transform: translateX(0%);
-      width: 270px; } }
+      max-width: 200px; }
+    .item .item__logo {
+      margin: 36px 0 0 0; }
+      .item .item__logo img {
+        max-height: 40px;
+        max-width: 120px; }
+    .item .item__info {
+      padding: 0 20px 0 20px;
+      bottom: 30px; }
+      .item .item__info p {
+        opacity: 1;
+        -webkit-transform: translatey(0%);
+        -ms-transform: translatey(0%);
+        transform: translatey(0%); } }
+
+@media (max-width: 768px) {
+  .item {
+    height: 50vh; }
+    .item .item__info h3 {
+      font-size: 2.125em; } }
 
 @media (max-width: 568px) {
   .item {
-    height: 480px;
+    height: 430px;
     width: 100%;
     border-bottom: solid 1px #E0E0E0; }
     .item .item__logo {
@@ -2965,5 +2981,5 @@ blockquote {
       position: static;
       left: 0;
       text-align: center;
-      margin: 25px 0;
+      margin: 30px 0;
       padding: 0; } }
