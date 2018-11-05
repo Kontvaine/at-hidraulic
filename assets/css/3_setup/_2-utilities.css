@@ -1,0 +1,56 @@
+.fl-left {
+  float: left; }
+
+.fl-right {
+  float: right !important; }
+
+.fl-center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.fl-none {
+  float: none; }
+
+.va-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+  -ms-transform: translatey(-50%);
+  transform: translatey(-50%); }
+
+.ta-left {
+  text-align: left; }
+
+.ta-center {
+  text-align: center; }
+
+.ta-right {
+  text-align: right; }
+
+.clear {
+  clear: both; }
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+#page-container {
+  overflow: hidden; }
+
+.img-box {
+  overflow: hidden; }
+  .img-box img {
+    display: block;
+    max-width: 100%; }
+  .img-box.img-box--full img {
+    width: 100%; }
+
+.text-box {
+  overflow: hidden; }
+  .text-box > *:first-child {
+    margin-top: 0; }
+  .text-box > *:last-child {
+    margin-bottom: 0; }

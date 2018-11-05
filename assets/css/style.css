@@ -2887,9 +2887,9 @@ blockquote {
     bottom: 0;
     left: 0;
     margin: auto;
-    -webkit-transform: translateX(20%);
-    -ms-transform: translateX(20%);
-    transform: translateX(20%);
+    -webkit-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    transform: translateX(30%);
     -webkit-transition: 1s ease;
     -o-transition: 1s ease;
     transition: 1s ease; }
@@ -2923,7 +2923,10 @@ blockquote {
 
 @media (max-width: 1024px) {
   .item img.item__center {
-    max-height: 305px; }
+    max-height: 305px;
+    -webkit-transform: translateX(15%);
+    -ms-transform: translateX(15%);
+    transform: translateX(15%); }
   .item .item__info {
     padding: 0 20px 0 20px;
     bottom: 30px; }
