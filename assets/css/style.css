@@ -2909,7 +2909,10 @@ blockquote {
       opacity: 0;
       -webkit-transition: 1s ease;
       -o-transition: 1s ease;
-      transition: 1s ease; }
+      transition: 1s ease;
+      -webkit-transition-delay: 0.35s;
+      -o-transition-delay: 0.35s;
+      transition-delay: 0.35s; }
 
 @media (max-width: 1440px) {
   .item img.item__center {
@@ -2956,6 +2959,10 @@ blockquote {
     .item .item__info {
       padding: 0 20px 0 20px;
       bottom: 30px; }
+      .item .item__info h3 {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none; }
       .item .item__info p {
         opacity: 1;
         -webkit-transform: translatey(0%);
@@ -2967,6 +2974,10 @@ blockquote {
     height: 50vh; }
     .item .item__info h3 {
       font-size: 2.125em; } }
+
+@media (max-height: 700px) {
+  .item {
+    height: 100vh; } }
 
 @media (max-width: 568px) {
   .item {
