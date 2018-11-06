@@ -2910,9 +2910,9 @@ blockquote {
       -ms-transform: translatey(23px);
       transform: translatey(23px);
       opacity: 0;
-      -webkit-transition: all ease 1000ms;
-      -o-transition: all ease 1000ms;
-      transition: all ease 1000ms; }
+      -webkit-transition: all ease 800ms;
+      -o-transition: all ease 800ms;
+      transition: all ease 800ms; }
 
 @media (max-width: 1440px) {
   .item img.item__center {
